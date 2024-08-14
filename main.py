@@ -55,7 +55,7 @@ projects = [
 cols = st.columns(2)
 for i, project in enumerate(projects):
     with cols[i % 2]:
-        st.image(project["image"], caption=project["title"], use_column_width=True)
+        # st.image(project["image"], caption=project["title"], use_column_width=True)
         st.write(f"**{project['title']}**")
         st.write(project["description"])
         st.write(f"**Fees:** {project['fees']}")
